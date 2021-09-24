@@ -1,7 +1,10 @@
 require "pry"
 require "active_record"
 
-# Setup a database connection
+#Ruby Student class links students table in the database.
+
+
+# Setup a database connection.  locates db
 ActiveRecord::Base.establish_connection(
   adapter: "sqlite3",
   database: "db/students.sqlite"
@@ -24,4 +27,4 @@ class Student < ActiveRecord::Base
 end
 
 binding.pry
-""
+
